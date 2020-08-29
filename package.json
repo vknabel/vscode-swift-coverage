@@ -1,7 +1,7 @@
 {
   "name": "swift-coverage",
   "displayName": "Swift Coverage",
-  "description": "Displays code coverage reports of Swift Package Manager.",
+  "description": "Display coverage reports next to your code for Swift Package Manager projects.",
   "version": "1.0.0",
   "license": "MIT",
   "publisher": "vknabel",
@@ -18,6 +18,8 @@
     "swift",
     "coverage",
     "cov",
+    "codecov",
+    "llvm-codecov",
     "swiftpm",
     "guters"
   ],
@@ -46,82 +48,82 @@
         "swift-coverage.coverageFilePattern": {
           "type": "string",
           "default": "**/.build/*/debug/codecov/*.json",
-          "description": ""
+          "description": "The pattern where to find the llvm-codecov JSON-reports."
         },
         "swift-coverage.highlightsCoveredText": {
           "type": "boolean",
           "default": false,
-          "description": ""
+          "description": "Wether code with coverage should have a higlighted background."
         },
         "swift-coverage.highlightsNotCoveredText": {
           "type": "boolean",
           "default": true,
-          "description": ""
+          "description": "Wether code with no coverage should have a higlighted background."
         },
         "swift-coverage.coveredTextBackground.dark": {
           "type": "string",
           "default": "rgba(48, 209, 88, 0.25)",
-          "description": ""
+          "description": "The brackground color used to highlight code with coverage."
         },
         "swift-coverage.coveredTextBackground.light": {
           "type": "string",
           "default": "rgba(52, 199, 89, 0.25)",
-          "description": ""
+          "description": "The brackground color used to highlight code with coverage."
         },
         "swift-coverage.notCoveredTextBackground.dark": {
           "type": "string",
           "default": "rgba(255, 69, 58, 0.25)",
-          "description": ""
+          "description": "The brackground color used to highlight code with no coverage."
         },
         "swift-coverage.notCoveredTextBackground.light": {
           "type": "string",
           "default": "rgba(255, 59, 48, 0.25)",
-          "description": ""
+          "description": "The brackground color used to highlight code with no coverage."
         },
         "swift-coverage.highlightsCoveredGutter": {
           "type": "boolean",
           "default": true,
-          "description": ""
+          "description": "Wether lines with coverage should have a highlight-gutter."
         },
         "swift-coverage.highlightsNotCoveredGutter": {
           "type": "boolean",
           "default": true,
-          "description": ""
+          "description": "Wether lines with no coverage should have a highlight-gutter."
         },
         "swift-coverage.highlightsMixedGutter": {
           "type": "boolean",
           "default": true,
-          "description": ""
+          "description": "Wether lines with mixed coverage should have a highlight-gutter."
         },
         "swift-coverage.coveredGutterIcon.dark": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code with coverage."
         },
         "swift-coverage.coveredGutterIcon.light": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code with coverage."
         },
         "swift-coverage.notCoveredGutterIcon.dark": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code without coverage."
         },
         "swift-coverage.notCoveredGutterIcon.light": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code without coverage."
         },
         "swift-coverage.mixedGutterIcon.dark": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code with mixed coverage."
         },
         "swift-coverage.mixedGutterIcon.light": {
           "type": "string",
           "default": null,
-          "description": ""
+          "description": "The path to the gutter-icon used to highlight code with mixed coverage."
         }
       }
     }
