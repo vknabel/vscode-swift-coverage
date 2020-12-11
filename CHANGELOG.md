@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Included missing example image in VS Code Extension bundle
+- Also accepts default `coverage`
+- The config `swift-coverage.coverageFilePattern` was ignored
 
 ## [1.0.0] - 2020-08-29
 

@@ -21,15 +21,15 @@ export class CoverageWatcher implements Disposable {
       this.coverageReporter,
       this.editorCoverageReporter,
       vscode.workspace
-        .createFileSystemWatcher("**/.build/*/debug/codecov/*.json")
+        .createFileSystemWatcher(config.coverageFilePattern)
         .onDidChange((uri) => this.applyCoverage(uri)),
       vscode.workspace
-        .createFileSystemWatcher("**/.build/*/debug/codecov/*.json")
+        .createFileSystemWatcher(config.coverageFilePattern)
         .onDidCreate((uri) => this.applyCoverage(uri))
     );
 
     vscode.workspace
-      .findFiles("**/.build/*/debug/codecov/*.json")
+      .findFiles(config.coverageFilePattern)
       .then((uris) => uris.forEach((uri) => this.applyCoverage(uri)));
   }
 

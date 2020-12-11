@@ -2,7 +2,7 @@
   "name": "swift-coverage",
   "displayName": "Swift Coverage",
   "description": "Display coverage reports next to your code for Swift Package Manager projects.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "publisher": "vknabel",
   "author": {
@@ -37,6 +37,7 @@
   ],
   "activationEvents": [
     "workspaceContains:**/.build/*/debug/codecov/*.json",
+    "workspaceContains:**/.build/*/debug/coverage/*.json",
     "workspaceContains:Package.swift"
   ],
   "main": "./out/extension.js",
@@ -47,7 +48,7 @@
       "properties": {
         "swift-coverage.coverageFilePattern": {
           "type": "string",
-          "default": "**/.build/*/debug/codecov/*.json",
+          "default": "**/.build/*/debug/{coverage,codecov}/*.json",
           "description": "The pattern where to find the llvm-codecov JSON-reports."
         },
         "swift-coverage.highlightsCoveredText": {

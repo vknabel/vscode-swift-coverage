@@ -28,7 +28,7 @@ export function currentConfig(context: vscode.ExtensionContext): Config {
   return {
     coverageFilePattern: conf.get<string>(
       "coverageFilePattern",
-      "**/.build/*/debug/codecov/*.json"
+      "**/.build/*/debug/{coverage,codecov}/*.json"
     )!,
 
     highlightsCoveredText: conf.get("highlightsCoveredText", false),
