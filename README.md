@@ -7,7 +7,7 @@ Display coverage reports next to your code for Swift Package Manager projects.
 To update and show your coverage statistics, run your tests with code coverage enabled.
 
 ```bash
-$ swift test --enable-code-coverage
+swift test --enable-code-coverage
 ```
 
 ## Configuration
@@ -33,7 +33,7 @@ $ swift test --enable-code-coverage
 
 ## Contributors
 
-- Valentin Knabel, [@vknabel](https://github.com/vknabel), [@vknabel](https://twitter.com/vknabel) on Twitter
+- Valentin Knabel, [@vknabel](https://github.com/vknabel)
 
 ## License
 
